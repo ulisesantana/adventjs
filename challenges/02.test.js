@@ -1,12 +1,12 @@
-function listGifts(letter) {
+function listGifts (letter) {
   return letter.split(' ').reduce((list, gift) => {
     const cleanedGift = gift.trim()
     return cleanedGift.length < 1 || cleanedGift.startsWith('_')
       ? list
-      :{
-        ...list,
-        [cleanedGift]: (list[cleanedGift] ?? 0) + 1
-      }
+      : {
+          ...list,
+          [cleanedGift]: (list[cleanedGift] ?? 0) + 1
+        }
   }, {})
 }
 

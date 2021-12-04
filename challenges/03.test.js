@@ -24,7 +24,6 @@
 //   válida y false si no lo es. ¡Y acaba con la travesura del Grinch!
 
 describe('Debe validar que las cartas', () => {
-
   it.todo('conteniendo parejas de paréntesis')
   it.todo('no contienen [, ], { ni }')
 })
